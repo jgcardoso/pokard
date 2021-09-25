@@ -8,6 +8,7 @@ import pokemon from 'pokemontcgsdk'
 
 export default function Home() {
   const [cards, setCards] = React.useState([])
+  const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
     
@@ -15,9 +16,22 @@ export default function Home() {
     .then(result => {
       const data = result.data;
       setCards(data);
+      console.log(data);
+      setLoading(false);
     })
 
   }, [])
+
+  if(loading) {
+    return (
+      <div className="page">
+        <div className="container">
+          <h1>Cards</h1>
+          <p>Loading...</p>
+        </div>
+      </div>
+    )
+  };
 
   return (
     <div className={styles.container}>
@@ -33,12 +47,15 @@ export default function Home() {
           <h1>Cards</h1>
 
           <div className={cardStyles.grid}>
-            <div>iuiu</div>
-            <div>iuiu</div>
-            <div>iuiu</div>
-            <div>iuiu</div>
-            <div>iuiu</div>
-            <div>iuiu</div>
+            {cards && cards.map(card => {
+              return (
+                <div key={card.id}>
+                  <div className={cardStyles.image}>
+                    <Image src={card.images.small} width="245" height="342" />
+                  </div>
+                </div>
+              )
+            })}
           </div>
 
         </div>

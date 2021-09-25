@@ -2,4 +2,12 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.image {
+  position: relative;
+  width: 245px;
+  height: 342px;
+  cursor: pointer;
 }
