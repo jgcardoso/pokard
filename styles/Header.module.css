@@ -1,10 +1,25 @@
 
 
 .header {
-  background-color: #efefef;
+  background-color: #D6EEF8;
+  padding: 20px 0;
 }
 
 .headerGrid {
   display: flex;
   justify-content: space-between;
+}
+
+.headerLogo a {
+  color: #2A3672;
+  font-weight: 600;
+}
+
+.headerMenu nav {
+  display: flex;
+  gap: 3px 15px;
+}
+
+.headerMenu nav a {
+  color: #2A3672;
 }
