@@ -16,12 +16,13 @@ function search() {
   const { search } = router.query
 
   React.useEffect(() => {
+    console.log(router);
     getCards();
   }, [search])
 
   async function getCards() {
     setNotFound(false)
-    const response = await pokemon.card.where({ q: `name:${search}*` })
+    const response = await pokemon.card.where({ q: `name:"${search}*"` })
     
     if(response.data.length === 0) {
       setNotFound(true);
