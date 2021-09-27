@@ -6,6 +6,8 @@ import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 import cardStyles from '../../styles/Cards.module.css'
 
+import Card from './../../components/Card'
+
 import pokemon from 'pokemontcgsdk'
 
 function Search() {
@@ -59,18 +61,8 @@ function Search() {
 
           <div className={cardStyles.grid}>
 
-            {cards && cards.map((card, index) => {
-              return (
-                <div key={card.id + index} className={cardStyles.card}>
-                  <div className={cardStyles.image}>
-                    <Image src={card.images.small ? card.images.small : card.images.large} width="245" height="342" />
-                  </div>
-                  <div className={cardStyles.name}>
-                    <p>{card.name}</p>
-                  </div>
-                </div>
-              )
-            })}
+            {cards && cards.map((card, index) => <Card key={card.id + index} card={card} />) }
+
           </div>
 
         </div>
