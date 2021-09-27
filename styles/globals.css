@@ -43,3 +43,23 @@ h1 {
   font-weight: 100;
   margin-bottom: 40px;
 }
+
+.loadMore {
+  text-align: center;
+}
+
+.loadMore button {
+  border: 0;
+  background-color: #2B3074;
+  color: white;
+  padding: 15px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+}
+
+.loadMore button[disabled] {
+  cursor: auto;
+  background-color: #978FC6;
+}

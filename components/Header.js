@@ -10,7 +10,7 @@ function Header() {
           <div className={styles.headerLogo}>
             <a href="#">
               <span className={styles.icoLogo}></span>
-              Pokárd
+              Pokard
             </a>
           </div>
           <div className={styles.headerMenu}>
