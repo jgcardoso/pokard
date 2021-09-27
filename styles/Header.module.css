@@ -53,6 +53,12 @@
   align-items: center;
 }
 
+.headerMenu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
 .headerMenu nav {
   display: flex;
   height: 100%;
@@ -62,4 +68,23 @@
 
 .headerMenu nav a {
   color: #2A3672;
+}
+
+.formSearch {
+  position: relative;
+}
+
+.formSearch input {
+  height: 40px;
+  width: 200px;
+  border-radius: 4px;
+  border: 0;
+  padding: 0 15px;
+  font-size: 1rem;
+  background-color: #2B3074;
+  color: white;
+}
+
+.formSearch input::placeholder {
+  color: white;
 }
