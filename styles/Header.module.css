@@ -2,22 +2,62 @@
 
 .header {
   background-color: #D6EEF8;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .headerGrid {
   display: flex;
   justify-content: space-between;
+  align-content: center;
+}
+
+.icoLogo {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: #2B3074;
+  border-radius: 50%;
+  margin-right: 15px;
+  z-index: 0;
+}
+
+.icoLogo::before,
+.icoLogo::after {
+  position: absolute;
+  height: 18px;
+  width: 13px;
+  content: '';
+  background-color: white;
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.icoLogo::before {
+  top: 12px;
+  left: 13px;
+}
+
+.icoLogo::after {
+  top: 16px;
+  right: 13px;
+  background-color: #6D72B4;
 }
 
 .headerLogo a {
   color: #2A3672;
   font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
 }
 
 .headerMenu nav {
   display: flex;
-  gap: 3px 15px;
+  height: 100%;
+  align-items: center;
+  gap: 3px 30px;
 }
 
 .headerMenu nav a {

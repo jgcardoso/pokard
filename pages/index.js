@@ -26,7 +26,7 @@ export default function Home() {
     return (
       <div className="page">
         <div className="container">
-          <h1>Cards</h1>
+          <h1>Pokémon Trading Card Game</h1>
           <p>Loading...</p>
         </div>
       </div>
@@ -44,7 +44,7 @@ export default function Home() {
       <div className="page">
         <div className="container">
           
-          <h1>Cards</h1>
+          <h1>Pokémon Trading Card Game</h1>
 
           <div className={cardStyles.grid}>
             {cards && cards.map(card => {

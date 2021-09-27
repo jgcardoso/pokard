@@ -9,6 +9,7 @@ function Header() {
         
           <div className={styles.headerLogo}>
             <a href="#">
+              <span className={styles.icoLogo}></span>
               Pokárd
             </a>
           </div>
