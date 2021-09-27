@@ -32,7 +32,11 @@ function Header() {
           </div>
           <div className={styles.headerMenu}>
             <nav>
-              <a href="#">Cards</a>
+              <Link href="/">
+                <a>
+                  Cards
+                </a>
+              </Link>
               <a href="#">Sets</a>
             </nav>
             <div className={styles.formSearch}>

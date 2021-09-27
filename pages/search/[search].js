@@ -8,7 +8,7 @@ import cardStyles from '../../styles/Cards.module.css'
 
 import pokemon from 'pokemontcgsdk'
 
-function search() {
+function Search() {
   const [cards, setCards] = React.useState([])
   const [notFound, setNotFound] = React.useState(false);
 
@@ -16,7 +16,6 @@ function search() {
   const { search } = router.query
 
   React.useEffect(() => {
-    console.log(router);
     getCards();
   }, [search])
 
@@ -39,7 +38,7 @@ function search() {
       <div className="page">
         <div className="container">
           <h1>Search</h1>
-          <p>Nada Encontrado</p>
+          <p>Not Found</p>
         </div>
       </div>
     )
@@ -81,4 +80,4 @@ function search() {
   )
 }
 
-export default search
+export default Search
