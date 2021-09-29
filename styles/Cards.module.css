@@ -42,3 +42,19 @@
 .image:hover p {
   bottom: -30px;
 }
+
+
+@media (max-width: 844px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 520px) {
+  .name p {
+    width: calc(100% - 10px);
+    margin: 0;
+  } 
+}
