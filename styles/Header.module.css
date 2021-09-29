@@ -8,7 +8,7 @@
 .headerGrid {
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
 }
 
 .icoLogo {
@@ -87,4 +87,19 @@
 
 .formSearch input::placeholder {
   color: white;
+}
+
+.headerMenuIco {
+  display: none;
+  font-size: 2.2rem;
+}
+
+@media (max-width: 768px) {
+  .headerMenu {
+    display: none;
+  }
+
+  .headerMenuIco {
+    display: block;
+  }
 }

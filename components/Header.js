@@ -30,6 +30,11 @@ function Header() {
               </a>
             </Link>
           </div>
+          <div className={styles.headerMenuIco}>
+            <span>
+              <i class="bi bi-list"></i>
+            </span>
+          </div>
           <div className={styles.headerMenu}>
             <nav>
               <Link href="/">
