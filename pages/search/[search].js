@@ -37,11 +37,9 @@ function Search() {
 
   if(notFound) {
     return (
-      <div className="page">
-        <div className="container">
-          <h1>Search</h1>
-          <p>Not Found</p>
-        </div>
+      <div>
+        <h1>Search</h1>
+        <p>Not Found</p>
       </div>
     )
   };
@@ -54,16 +52,12 @@ function Search() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="page">
-        <div className="container">
-          
-          <h1>Search: {search}</h1>
+      <div>
+        <h1>Search: {search}</h1>
 
-          <div className={cardStyles.grid}>
+        <div className={cardStyles.grid}>
 
-            {cards && cards.map((card, index) => <Card key={card.id + index} card={card} />) }
-
-          </div>
+          {cards && cards.map((card, index) => <Card key={card.id + index} card={card} />) }
 
         </div>
       </div>

@@ -22,6 +22,11 @@ a {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* HELPERS */
 
@@ -64,4 +69,42 @@ h1 {
 .loadMore button[disabled] {
   cursor: auto;
   background-color: #978FC6;
+}
+
+
+
+/* sets */
+
+.setsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.set {
+  text-align: center;
+}
+
+.setsImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 200px;
+}
+
+.setsImage img {
+  width: 60%;
+  object-fit: cover;
+}
+
+.setName p {
+  margin: 0;
+  background-color: #2B3074;
+  display: inline-block;
+  border-radius: 30px;
+  padding: 10px 15px;
+  color: white;
+  font-size: .9rem;
 }

@@ -42,7 +42,11 @@ function Header() {
                   Cards
                 </a>
               </Link>
-              <a href="#">Sets</a>
+              <Link href="/sets">
+                <a>
+                  Sets
+                </a>
+              </Link>
             </nav>
             <div className={styles.formSearch}>
               <form onSubmit={handleForm}>
