@@ -32,7 +32,7 @@ function Header() {
           </div>
           <div className={styles.headerMenuIco}>
             <span>
-              <i class="bi bi-list"></i>
+              <i className="bi bi-list"></i>
             </span>
           </div>
           <div className={styles.headerMenu}>
