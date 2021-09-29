@@ -53,6 +53,9 @@
 }
 
 @media (max-width: 520px) {
+  .image {
+    margin-top: -5px;
+  }
   .name p {
     width: calc(100% - 10px);
     margin: 0;
