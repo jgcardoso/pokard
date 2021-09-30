@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 import Head from 'next/head'
 
-
 import pokemon from 'pokemontcgsdk'
 
 export default function Sets() {
@@ -15,9 +14,8 @@ export default function Sets() {
   async function getSets() {
     const response = await pokemon.set.all()
     setSets([...sets, ...response]);
-
   }
-  
+
   return (
     <div>
       <Head>
